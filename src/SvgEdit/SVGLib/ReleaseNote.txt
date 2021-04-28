@@ -1,0 +1,28 @@
+--------------------------------------------------------------------------------
+ SVGLib
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+ COPYRIGHT & LICENSE INFORMATION
+
+ Written by Maurizio Bigoloni <big71@fastwebnet.it>
+ Copyright (c) 2004. All Rights Reserved.
+
+ Licensed under Open Software License version 2.1 (see http://www.opensource.org)
+
+ The Open Software License grants you the right to reproduce, distribute, modify  
+ it as long as your work is licensed under the Open Software License (see 
+ www.opensource.org for details).
+
+ This file is provided "as is" with no expressed or implied warranty.
+ The author accepts no liability for any damage/loss of business that
+ this product may cause.
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+ RELEASES HISTORY
+
+ # Version: 0.10
+   Date: 2004-XX-XX
+
+--------------------------------------------------------------------------------

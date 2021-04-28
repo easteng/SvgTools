@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B01557B-78FA-49D2-B288-285A5D84FCA7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SVGEditor2</RootNamespace>
+    <AssemblyName>SvgArtiste</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FRAMEWORKMENUS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;FRAMEWORKMENUS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkArea.resx">
+      <DependentUpon>WorkArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SVGArtiste.resx">
+      <DependentUpon>SVGArtiste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\Forms\ToolBox.resx">
+      <DependentUpon>ToolBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\DrawArea.resx">
+      <DependentUpon>DrawArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WorkSpace.resx">
+      <DependentUpon>WorkSpace.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="WorkArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkArea.Designer.cs">
+      <DependentUpon>WorkArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SVGArtiste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SVGArtiste.Designer.cs">
+      <DependentUpon>SVGArtiste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkSpaceControlBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkSpaceControlBox.Designer.cs">
+      <DependentUpon>WorkSpaceControlBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ToolPath.cs" />
+    <Compile Include="Tools\Forms\ShapeProperties.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Forms\ShapeProperties.Designer.cs">
+      <DependentUpon>ShapeProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ToolPan.cs" />
+    <Compile Include="Tools\Tool.cs" />
+    <Compile Include="Tools\Forms\ToolBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\Forms\ToolBox.Designer.cs">
+      <DependentUpon>ToolBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\ToolEllipse.cs" />
+    <Compile Include="Tools\ToolImage.cs" />
+    <Compile Include="Tools\ToolLine.cs" />
+    <Compile Include="Tools\ToolObject.cs" />
+    <Compile Include="Tools\ToolPointer.cs" />
+    <Compile Include="Tools\ToolPolygon.cs" />
+    <Compile Include="Tools\ToolRectangle.cs" />
+    <Compile Include="Tools\ToolText.cs" />
+    <Compile Include="UserControls\DrawArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\RulerControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkSpace.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkSpace.Designer.cs">
+      <DependentUpon>WorkSpace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\WorkspaceHolder.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\WorkspaceHolder.Designer.cs">
+      <DependentUpon>WorkspaceHolder.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Crom.Controls\Crom.Controls.csproj">
+      <Project>{F2999C1D-BED3-4D47-A8AC-8027334ECDC1}</Project>
+      <Name>Crom.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Draw\Draw.csproj">
+      <Project>{3BAE9B81-85D2-4A4C-969B-D5D9DA5E1C6A}</Project>
+      <Name>Draw</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SVGLib\SVGLib.csproj">
+      <Project>{43B7A044-2909-48C9-AD09-707709CDFE46}</Project>
+      <Name>SVGLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Rectangle.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Ellipse.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Line.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Pencil.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Text.cur" />
+    <EmbeddedResource Include="WorkSpaceControlBox.resx">
+      <DependentUpon>WorkSpaceControlBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\RulerControl.resx">
+      <DependentUpon>RulerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\WorkspaceHolder.resx">
+      <DependentUpon>WorkspaceHolder.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save_as1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\pan.cur" />
+    <EmbeddedResource Include="Resources\pan_close.cur" />
+    <EmbeddedResource Include="Tools\Forms\ShapeProperties.resx">
+      <DependentUpon>ShapeProperties.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,81 @@
+a 
+altGlyph 
+altGlyphDef 
+altGlyphItem 
+animate 
+animateColor 
+animateMotion 
+animateTransform 
+circle (SUPPORTED R0.10)
+clipPath 
+color-profile 
+cursor 
+definition-src 
+defs 
+desc (SUPPORTED R0.10)
+ellipse (SUPPORTED R0.10)
+feBlend 
+feColorMatrix 
+feComponentTransfer 
+feComposite 
+feConvolveMatrix 
+feDiffuseLighting 
+feDisplacementMap 
+feDistantLight 
+feFlood 
+feFuncA 
+feFuncB 
+feFuncG 
+feFuncR 
+feGaussianBlur 
+feImage 
+feMerge 
+feMergeNode 
+feMorphology 
+feOffset 
+fePointLight 
+feSpecularLighting 
+feSpotLight 
+feTile 
+feTurbulence 
+filter 
+font (SUPPORTED R0.10)
+font-face 
+font-face-format 
+font-face-name 
+font-face-src 
+font-face-uri 
+foreignObject 
+g (SUPPORTED R0.10)
+glyph 
+glyphRef 
+hkern 
+image (SUPPORTED R0.10)
+line (SUPPORTED R0.10)
+linearGradient 
+marker 
+mask 
+metadata 
+missing-glyph 
+mpath 
+path (SUPPORTED R0.10)
+pattern 
+polygon (SUPPORTED R0.10)
+polyline 
+radialGradient 
+rect (SUPPORTED R0.10)
+script 
+set 
+stop 
+style 
+svg (SUPPORTED R0.10)
+switch 
+symbol 
+text (SUPPORTED R0.10)
+textPath 
+title 
+tref 
+tspan 
+use 
+view 
+vkern 
